@@ -15,6 +15,7 @@ namespace ImageToCodepic
         public Form1()
         {
             InitializeComponent();
+            fontSizeText.Value = (int)(showCodePicTextbox.Font.Size);
         }
 
         private void openImageBtn_Click(object sender, EventArgs e)
@@ -31,6 +32,11 @@ namespace ImageToCodepic
         public void setProgressBar(int p)
         {
             generateProgressBar.Value = p;
+        }
+
+        private void fontSizeText_ValueChanged(object sender, EventArgs e)
+        {
+            showCodePicTextbox.Font = new Font("宋体", (float)fontSizeText.Value, showCodePicTextbox.Font.Style);
         }
     }
 }

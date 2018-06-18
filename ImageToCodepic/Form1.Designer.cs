@@ -32,14 +32,16 @@
             this.showCodePicTextbox = new System.Windows.Forms.TextBox();
             this.openImageFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.generateProgressBar = new System.Windows.Forms.ProgressBar();
+            this.fontSizeText = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.fontSizeText)).BeginInit();
             this.SuspendLayout();
             // 
             // openImageBtn
             // 
-            this.openImageBtn.Location = new System.Drawing.Point(10, 10);
-            this.openImageBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openImageBtn.Location = new System.Drawing.Point(13, 12);
+            this.openImageBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.openImageBtn.Name = "openImageBtn";
-            this.openImageBtn.Size = new System.Drawing.Size(88, 26);
+            this.openImageBtn.Size = new System.Drawing.Size(117, 32);
             this.openImageBtn.TabIndex = 0;
             this.openImageBtn.Text = "打开文件";
             this.openImageBtn.UseVisualStyleBackColor = true;
@@ -50,13 +52,14 @@
             this.showCodePicTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.showCodePicTextbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showCodePicTextbox.Location = new System.Drawing.Point(10, 42);
-            this.showCodePicTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showCodePicTextbox.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.showCodePicTextbox.Location = new System.Drawing.Point(13, 52);
+            this.showCodePicTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.showCodePicTextbox.Multiline = true;
             this.showCodePicTextbox.Name = "showCodePicTextbox";
-            this.showCodePicTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.showCodePicTextbox.Size = new System.Drawing.Size(678, 349);
+            this.showCodePicTextbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.showCodePicTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.showCodePicTextbox.Size = new System.Drawing.Size(903, 473);
             this.showCodePicTextbox.TabIndex = 1;
             // 
             // openImageFileDialog
@@ -65,22 +68,37 @@
             // 
             // generateProgressBar
             // 
-            this.generateProgressBar.Location = new System.Drawing.Point(103, 10);
+            this.generateProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.generateProgressBar.Location = new System.Drawing.Point(137, 12);
+            this.generateProgressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.generateProgressBar.Name = "generateProgressBar";
-            this.generateProgressBar.Size = new System.Drawing.Size(581, 26);
+            this.generateProgressBar.Size = new System.Drawing.Size(671, 32);
             this.generateProgressBar.TabIndex = 2;
+            // 
+            // fontSizeText
+            // 
+            this.fontSizeText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.fontSizeText.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.fontSizeText.Location = new System.Drawing.Point(815, 14);
+            this.fontSizeText.Name = "fontSizeText";
+            this.fontSizeText.Size = new System.Drawing.Size(101, 28);
+            this.fontSizeText.TabIndex = 3;
+            this.fontSizeText.ValueChanged += new System.EventHandler(this.fontSizeText_ValueChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 429);
+            this.ClientSize = new System.Drawing.Size(928, 536);
+            this.Controls.Add(this.fontSizeText);
             this.Controls.Add(this.generateProgressBar);
             this.Controls.Add(this.showCodePicTextbox);
             this.Controls.Add(this.openImageBtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.fontSizeText)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,6 +110,7 @@
         private System.Windows.Forms.TextBox showCodePicTextbox;
         private System.Windows.Forms.OpenFileDialog openImageFileDialog;
         private System.Windows.Forms.ProgressBar generateProgressBar;
+        private System.Windows.Forms.NumericUpDown fontSizeText;
     }
 }
 

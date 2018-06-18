@@ -31,17 +31,17 @@ namespace ImageToCodepic
         private string BitmapToCode(Bitmap bitmap)
         {
             //char[] charPreset = { 'M', 'W', '$', '&', 'V', '%', '*', '0', '!', '1', 'i', ':', '|', '.', ' ' };//预置代替字符
-            char[] charPreset = { ' ', ' ', '.', '.',',', ':', ',', ':', '|', 'i', '1', '!','/',']','I', 'o', '0', 'G', '*', '%', 'K', '&', '$', 'W', 'M', 'M' };//预置代替字符
+            char[] charPreset = { ' ', ' ', '.', '.', ',', ':', ',', ':', '|', 'i', '1', '!', '}','/',']','I', 'o', '0', 'G', '*', '%', 'K', '&', '$', 'W', 'M', 'M' };//预置代替字符
             StringBuilder result = new StringBuilder();
 
             int bitHeight = bitmap.Height;
             int bitWidth = bitmap.Width;
             //double everyCharWidth = 678 / 111;
-            double precision = 18;//精度，数越小越清晰
+            double precision = 10;//精度，数越小越清晰
 
 
-            int bitCol = (int)(precision * ((float)6 / 11));//单位区域像素宽//宽度补偿
-            int bitRow = (int )precision;//单位区域像素高
+            int bitCol = (int)(precision );//单位区域像素宽//宽度补偿
+            int bitRow = (int )(precision * ((float)11 / 6));//单位区域像素高
 
             int areaXCount = bitWidth / bitCol; //1000/10像素=100个区域
             int areaYCount = bitHeight / bitRow;//700 /7个像素=100 个区域
