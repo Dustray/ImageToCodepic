@@ -31,7 +31,7 @@ namespace ImageToCodepic
         private string BitmapToCode(Bitmap bitmap)
         {
             //char[] charPreset = { 'M', 'W', '$', '&', 'V', '%', '*', '0', '!', '1', 'i', ':', '|', '.', ' ' };//预置代替字符
-            char[] charPreset = { ' ', ' ', '.', '.', ',', ':', ',', ':', '|', 'i', '1', '!', '}','/',']','I', 'o', '0', 'G', '*', '%', 'K', '&', '$', 'W', 'M', 'M' };//预置代替字符
+            char[] charPreset = { ' ', ' ', '.', '.', ',', ':', ',', ':', '|', 'i', '1', '!',')', '}','/',']','I','J', 'D', '0','U','O', 'G', 'K', '%','X', '&', '$','N', '@', 'W', 'M', 'M' };//预置代替字符
             StringBuilder result = new StringBuilder();
 
             int bitHeight = bitmap.Height;

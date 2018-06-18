@@ -41,7 +41,7 @@
             this.openImageBtn.Location = new System.Drawing.Point(13, 12);
             this.openImageBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.openImageBtn.Name = "openImageBtn";
-            this.openImageBtn.Size = new System.Drawing.Size(117, 32);
+            this.openImageBtn.Size = new System.Drawing.Size(110, 32);
             this.openImageBtn.TabIndex = 0;
             this.openImageBtn.Text = "打开文件";
             this.openImageBtn.UseVisualStyleBackColor = true;
@@ -70,19 +70,19 @@
             // 
             this.generateProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.generateProgressBar.Location = new System.Drawing.Point(137, 12);
+            this.generateProgressBar.Location = new System.Drawing.Point(130, 12);
             this.generateProgressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.generateProgressBar.Name = "generateProgressBar";
-            this.generateProgressBar.Size = new System.Drawing.Size(671, 32);
+            this.generateProgressBar.Size = new System.Drawing.Size(669, 32);
             this.generateProgressBar.TabIndex = 2;
             // 
             // fontSizeText
             // 
             this.fontSizeText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fontSizeText.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fontSizeText.Location = new System.Drawing.Point(815, 14);
+            this.fontSizeText.Location = new System.Drawing.Point(806, 14);
             this.fontSizeText.Name = "fontSizeText";
-            this.fontSizeText.Size = new System.Drawing.Size(101, 28);
+            this.fontSizeText.Size = new System.Drawing.Size(110, 28);
             this.fontSizeText.TabIndex = 3;
             this.fontSizeText.ValueChanged += new System.EventHandler(this.fontSizeText_ValueChanged);
             // 
